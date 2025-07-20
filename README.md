@@ -31,7 +31,6 @@ I'm a Software Engineering student at GCUF, passionate about backend development
 
 ---
 
-<!-- Optional GitHub Stats -->
-<!--
+
 ![Arslan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=mearslanahmed&show_icons=true&theme=default)
--->
+---
