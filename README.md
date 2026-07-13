@@ -1,78 +1,67 @@
 <div align="center">
 
-# Arslan Ahmed
+## Arslan Ahmed
 
-Software Engineer | Mobile · Full-Stack · AI/ML
-Building production apps with React Native, Kotlin, Python, and Next.js.
-Two AI systems built for real clients. 5★ on Fiverr with international clients.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/mearslanahmed)
-[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/mearslanahmed)
-[![Fiverr](https://img.shields.io/badge/Fiverr-1DBF73?logo=fiverr&logoColor=white)](https://fiverr.com/mearslanahmed)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:arslanahmednaseem@gmail.com)
+[arslanahmed.me](https://arslanahmed.me) · [LinkedIn](https://linkedin.com/in/mearslanahmed) · [Fiverr](https://fiverr.com/mearslanahmed) · [Email](mailto:arslanahmednaseem@gmail.com)
 
 </div>
 
 ---
 
-## About
+I build production software across mobile, backend, and applied AI, and I care more about shipping AI into real products than running experiments in notebooks. AgriGuard started with a client requirement, ran through six months of EfficientNetB3 training on crop disease data, and ended with an ESP32 controlling an irrigation pump from a React Native app. That's the kind of problem I find interesting.
 
-Software Engineer from Faisalabad. I got into this field to build things that actually matter - AgriGuard came from wanting to solve a real problem for farmers, and TalentSift from making hiring less broken.
-
-I've been freelancing with international and local clients since my second year, which taught me more about delivering real software than most coursework did. 5.0 rated on Fiverr, all while carrying a full degree at GCUF.
-
-Long term I want to contribute to AI development in Pakistan. Right now I'm looking for MS programs in AI abroad and open to engineering roles across ML, mobile, or full-stack.
-
----
-
-## Tech Stack
-
-```
-Languages   →   JavaScript · TypeScript · Python · Kotlin · C# · C++
-Mobile      →   React Native · Expo · Android SDK
-Frontend    →   React · Next.js · Tailwind CSS
-Backend     →   Node.js · Express.js · Django REST · Flask
-Database    →   MongoDB · PostgreSQL · MySQL · MS SQL Server · Firebase
-AI/ML       →   TensorFlow · Keras · Scikit-learn · LangChain · Pillow · Pandas · NumPy
-Tools       →   Git · Postman · Linux · Android Studio · Streamlit
-```
+Freelancing internationally since my second year of university. 5.0 on Fiverr. Currently shipping SpendWise.
 
 ---
 
 ## Projects
 
-**[AgriGuard](https://github.com/mearslanahmed/AgriGuard)**
-AI precision agriculture system for a live client. MobileNetV2 detects 39 crop disease classes at 92%+ accuracy. Automated irrigation via ESP32-CAM + relay module, pesticide advisory engine, JWT-authenticated Node.js backend, React Native dashboard.
-`React Native` `Node.js` `Python` `TensorFlow` `ESP32-CAM` `Hardware Integration`
+**[AgriGuard](https://github.com/mearslanahmed/AgriGuard)** · [Live](https://mearslanahmed.github.io/AgriGuard/) · [APK](https://github.com/mearslanahmed/AgriGuard/releases)
 
-**[TalentSift](https://github.com/mearslanahmed/TalentSift)** · [Live](https://talentsift.live)
-AI recruitment platform. Automated screening interviews with instant scoring via LangChain + Groq, practice interview sessions, role-based portals for candidates and recruiters, Stripe subscription tiers, and email OTP auth. Next.js + Django REST + PostgreSQL.
-`Next.js` `Django` `PostgreSQL` `LangChain` `Groq` `Stripe` `Supabase`
+Built for AG Leaders. A single disease classifier fails because it conflates diseases across crops: a tomato lesion and a mango lesion look similar enough to confuse the model. The fix: a crop gate first. EfficientNetB3 identifies the crop (11 classes, 99.15% accuracy), rejects unknown inputs, then a second EfficientNetB3 classifies disease within that confirmed crop (76 classes, 94.86% accuracy, 0.94 macro F1). Dual ESP32 architecture: CAM module handles image capture, WROOM handles pump relay and soil moisture, separated because running GPIO alongside camera and WiFi on a single ESP32-CAM causes ADC failure.
+
+`React Native` `Node.js` `TensorFlow` `Flask` `EfficientNetB3` `ESP32` `HuggingFace`
+
+---
 
 **[SpendWise](https://github.com/mearslanahmed/spendwise-react-native)**
-Expense tracker with category breakdown and bar chart visualizations. Local-first with SQLite persistence.
-`React Native` `Expo` `SQLite`
 
-**[Kaffeine](https://github.com/mearslanahmed/kaffeine-android)**
-Coffee ordering app with product catalog, cart flow, and Firebase backend. MVVM architecture.
-`Kotlin` `Firebase` `MVVM`
+AI finance tracker built solo. The financial advisor is RAG-grounded against each user's transaction history, budgets, and wallets before generating responses, preventing generic or fabricated advice. Gemini Vision extracts structured transaction data from receipts, reducing manual entry to a single image. Jest test coverage before release.
 
-**[ReelTime](https://github.com/mearslanahmed/reeltime-android)**
-Movie ticket booking with interactive seat selection and booking history.
-`Kotlin` `Firebase`
+`React Native` `TypeScript` `Expo` `Firebase` `Gemini` `Groq` `RAG` `Jest`
 
 ---
 
-## GitHub Stats
+**[TalentSift](https://github.com/mearslanahmed/TalentSift)** · [Live](https://talentsift.live)
 
-<div align="center">
+AI recruitment platform. Backed by PostgreSQL on Supabase to handle the concurrent read/write patterns an applicant tracking system generates: multiple recruiters reviewing, scoring, and updating candidates simultaneously. LangChain + Groq handle automated screening interviews with instant scoring. Stripe subscription tiers for premium features.
 
-![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mearslanahmed&theme=dark&hide_border=true&layout=compact)
-
-</div>
+`Next.js` `Django REST` `PostgreSQL` `LangChain` `Groq` `Stripe` `Supabase`
 
 ---
 
-<div align="center">
-<sub>Open to mobile/ML roles and freelance work · Faisalabad, Pakistan · Remote-friendly</sub>
-</div>
+**[ReelTime](https://github.com/mearslanahmed/reeltime-android)** · [Kaffeine](https://github.com/mearslanahmed/kaffeine-android) · [Movies Recommending System](https://github.com/mearslanahmed/movies-recommending-system) · [Employee Management System](https://github.com/mearslanahmed/employee-management-system)
+
+---
+
+## Stack
+
+```
+Languages   JavaScript · TypeScript · Python · Kotlin · C# · C++
+Mobile      React Native · Expo · Android SDK
+Frontend    React · Next.js · Tailwind CSS
+Backend     Node.js · Express · Django REST · Flask
+Databases   MongoDB · PostgreSQL · Firebase · MySQL
+AI/ML       TensorFlow · PyTorch · Keras · LangChain · Scikit-learn · Pandas · NumPy
+Tools       Git · Linux · Postman · Android Studio
+```
+
+---
+
+## Experience
+
+**Python Developer — AI/ML** · Smart Algorithm (AI Soft) · Dec 2024 – Mar 2025  
+Designed, trained, and deployed seven ML models across classification, regression, and clustering. Integrated trained models into production Django applications end-to-end.
+
+**Freelance Developer** · Fiverr · Jan 2024 – Present  
+5.0/5.0. Mobile apps, REST APIs, and full-stack systems for international clients.
