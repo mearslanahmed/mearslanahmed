@@ -23,12 +23,11 @@ Built for AG Leaders. A single disease classifier fails because it conflates dis
 `React Native` `Node.js` `TensorFlow` `Flask` `EfficientNetB3` `ESP32` `HuggingFace`
 
 ---
+**[SpendWise](https://github.com/mearslanahmed/spendwise-react-native)** · [Live](https://spendwiseapp.tech) · [Google Play](https://play.google.com/store/apps/details?id=com.mearslanahmed.SpendWise)
 
-**[SpendWise](https://github.com/mearslanahmed/spendwise-react-native)**
+AI finance tracker built solo, live on Android. The financial advisor is RAG-grounded against each user's transaction history, budgets, and wallets before generating responses, preventing generic or fabricated advice. Gemini Vision extracts structured transaction data from receipts, reducing manual entry to a single image. Native Android home screen widget built in Kotlin with Jetpack Glance so users can log transactions without opening the app. AI features routed through a Next.js backend API to keep keys off the client. Jest test coverage before release.
 
-AI finance tracker built solo. The financial advisor is RAG-grounded against each user's transaction history, budgets, and wallets before generating responses, preventing generic or fabricated advice. Gemini Vision extracts structured transaction data from receipts, reducing manual entry to a single image. Jest test coverage before release.
-
-`React Native` `TypeScript` `Expo` `Firebase` `Gemini` `Groq` `RAG` `Jest`
+`React Native` `Kotlin` `TypeScript` `Expo` `Firebase` `Gemini` `Groq` `Next.js` `RAG` `Jest`
 
 ---
 
